@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinos de la Naturaleza - WebApp Interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #228b22;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #228b22;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #228b22;
+        }
+        .fun-fact {
+            background-color: #fffacd;
+            padding: 10px;
+            border-left: 5px solid #ffd700;
+            margin: 10px 0;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #quiz {
+            margin-top: 40px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #228b22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006400;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reinos de la Naturaleza</h1>
+        <p>Explora los reinos biológicos con hechos divertidos y quizzes interactivos.</p>
+    </header>
+
+    <nav>
+        <a href="#monera">Monera</a>
+        <a href="#protista">Protista</a>
+        <a href="#fungi">Fungi</a>
+        <a href="#plantae">Plantae</a>
+        <a href="#animalia">Animalia</a>
+        <a href="#quiz">Quiz Interactivo</a>
+    </nav>
+
+    <section id="monera">
+        <h2>Reino Monera</h2>
+        <img src="https://pmfias.b-cdn.net/wp-content/uploads/2016/03/5-Kingdom-Classification-Plants-Animals.jpg" alt="Ilustración del Reino Monera">
+        <p>Organismos procariotas, unicelulares, sin núcleo definido. Incluye bacterias y arqueas. Son los seres vivos más antiguos y se encuentran en todos lados.
+
+<grok-card data-id="db75ba" data-type="image_card"></grok-card>
+
+</p>
+        <div class="fun-fact">¡Dato lúdico! Las bacterias en tu intestino son como un ejército de superhéroes que ayudan a digerir la comida. ¡Sin ellas, no podrías comer pizza!</div>
+    </section>
+
+    <section id="protista">
+        <h2>Reino Protista</h2>
+        <img src="https://sciencenotes.org/wp-content/uploads/2022/02/Kingdoms-of-Life-in-Biology-1024x683.png" alt="Ilustración del Reino Protista">
+        <p>Organismos eucariotas, mayormente unicelulares y diversos. Incluye algas, protozoos y hongos mucilaginosos. Viven en ambientes acuáticos.
+
+<grok-card data-id="564277" data-type="image_card"></grok-card>
+
+</p>
+        <div class="fun-fact">¡Dato lúdico! Las amebas se mueven como gelatina viviente, cambiando de forma para "cazar" comida. ¡Son como superhéroes elásticos!</div>
+    </section>
+
+    <section id="fungi">
+        <h2>Reino Fungi</h2>
+        <img src="https://microbenotes.com/wp-content/uploads/2024/04/Five-Kingdom-Classification-1024x537.jpeg" alt="Ilustración del Reino Fungi">
+        <p>Organismos eucariotas, heterótrofos que absorben nutrientes. Incluye hongos, levaduras y mohos. Descomponen materia orgánica.
+
+<grok-card data-id="540c2f" data-type="image_card"></grok-card>
+
+</p>
+        <div class="fun-fact">¡Dato lúdico! Los hongos son como magos de la naturaleza: ¡pueden hacer que el pan suba (levadura) o crear redes subterráneas más grandes que un bosque!</div>
+    </section>
+
+    <section id="plantae">
+        <h2>Reino Plantae</h2>
+        <img src="https://cdn.britannica.com/30/76630-004-88186EA7.jpg" alt="Ilustración del Reino Plantae">
+        <p>Organismos eucariotas, multicelulares, autótrofos con fotosíntesis. Tienen paredes celulares de celulosa. Producen oxígeno.
+
+<grok-card data-id="2fc5fe" data-type="image_card"></grok-card>
+
+</p>
+        <div class="fun-fact">¡Dato lúdico! Las plantas carnívoras como la Venus atrapamoscas son como trampas vivientes para insectos. ¡Juegan al "atrapa y come"!</div>
+    </section>
+
+    <section id="animalia">
+        <h2>Reino Animalia</h2>
+        <img src="http://palaeos.com/tellurobiota/images/Five_king.jpg" alt="Ilustración del Reino Animalia">
+        <p>Organismos eucariotas, multicelulares, heterótrofos y móviles. Sin paredes celulares. Incluye desde insectos hasta humanos.
+
+<grok-card data-id="99bd0e" data-type="image_card"></grok-card>
+
+</p>
+        <div class="fun-fact">¡Dato lúdico! Los pulpos tienen tres corazones y pueden cambiar de color como camaleones para esconderse. ¡Son maestros del disfraz!</div>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz Interactivo</h2>
+        <p>¡Prueba tus conocimientos! Selecciona las respuestas correctas y envía para ver tu puntuación.</p>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. ¿Cuál reino incluye organismos procariotas como bacterias?</p>
+                <label><input type="radio" name="q1" value="a"> Monera</label><br>
+                <label><input type="radio" name="q1" value="b"> Plantae</label><br>
+                <label><input type="radio" name="q1" value="c"> Animalia</label>
+            </div>
+            <div class="question">
+                <p>2. ¿Qué reino realiza fotosíntesis y tiene paredes celulares de celulosa?</p>
+                <label><input type="radio" name="q2" value="a"> Fungi</label><br>
+                <label><input type="radio" name="q2" value="b"> Plantae</label><br>
+                <label><input type="radio" name="q2" value="c"> Protista</label>
+            </div>
+            <div class="question">
+                <p>3. ¿En qué reino están los hongos que descomponen materia?</p>
+                <label><input type="radio" name="q3" value="a"> Animalia</label><br>
+                <label><input type="radio" name="q3" value="b"> Monera</label><br>
+                <label><input type="radio" name="q3" value="c"> Fungi</label>
+            </div>
+            <div class="question">
+                <p>4. ¿Cuál es el reino más diverso con protozoos y algas?</p>
+                <label><input type="radio" name="q4" value="a"> Protista</label><br>
+                <label><input type="radio" name="q4" value="b"> Plantae</label><br>
+                <label><input type="radio" name="q4" value="c"> Fungi</label>
+            </div>
+            <div class="question">
+                <p>5. ¿Qué reino incluye a los humanos y es heterótrofo?</p>
+                <label><input type="radio" name="q5" value="a"> Monera</label><br>
+                <label><input type="radio" name="q5" value="b"> Animalia</label><br>
+                <label><input type="radio" name="q5" value="c"> Protista</label>
+            </div>
+            <button type="button" onclick="checkQuiz()">Enviar Quiz</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <script>
+        function checkQuiz() {
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'c',
+                q4: 'a',
+                q5: 'b'
+            };
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            for (let i = 1; i <= 5; i++) {
+                const selected = form.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+            document.getElementById('result').innerText = `Tu puntuación: ${score}/5. ¡Sigue explorando!`;
+        }
+    </script>
+</body>
+</html>
